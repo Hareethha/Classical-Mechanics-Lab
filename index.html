@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Physics Archive — T1 Vector Laboratory</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <section class="panel">
+      <div class="panel-header">
+        <h1>T1 Vector Laboratory</h1>
+        <p class="subtitle">
+          A university vector lab for Classical Mechanics. Violet, black and white. Interactive, animated, student-friendly,
+          and open enough for learners to build their own mathematical intuition.
+        </p>
+      </div>
+      <div class="tab-grid" id="tabGrid"></div>
+      <div class="controls-scroll" id="controls"></div>
+    </section>
+
+    <section class="panel stage">
+      <div class="stage-top">
+        <div class="title-wrap">
+          <h2 id="stageTitle">A — Build a Vector</h2>
+          <div class="subtitle" id="stageDescription"></div>
+        </div>
+        <div class="mode-tag" id="modeTag">Interactive Lab</div>
+      </div>
+      <div class="canvas-wrap">
+        <canvas id="vectorCanvas" width="860" height="660"></canvas>
+        <div class="canvas-overlay">
+          <div class="overlay-card" id="overlayLeft"></div>
+          <div class="overlay-card" id="overlayRight"></div>
+        </div>
+      </div>
+      <div class="stage-bottom">
+        <div>
+          <div class="equation" id="equationLine"></div>
+          <div class="micro" id="equationSubline"></div>
+        </div>
+        <div class="btn-row">
+          <button class="action" id="playBtn">▶ Play</button>
+          <button class="action secondary" id="resetViewBtn">Reset View</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel">
+      <div class="panel-header">
+        <h2>Concept Notes</h2>
+        <p class="subtitle">Use these notes while you teach the intuition, then open the lab to let the student test it.</p>
+      </div>
+      <div class="info-scroll" id="infoPanel"></div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
